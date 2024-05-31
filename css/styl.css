@@ -1,0 +1,8 @@
+.navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
