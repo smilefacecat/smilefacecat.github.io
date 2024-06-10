@@ -38,7 +38,7 @@ body {
 }
 
 .navbar-nav a:hover {
-  color: #797977;
+  color: #797979;
 }
 
 .d-grid .btn img {
@@ -49,4 +49,38 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 0.5rem;
+}
+/* 確保頁尾在頁面底部 */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  background-color: #fff; /* 背景色改為白色 */
+  color: #797979; /* 文字顏色改為黑色 */
+}
+
+.footer-links a {
+  color: #797979; /* 連結文字顏色改為黑色 */
+}
+
+.footer-links a:hover {
+  color: #797979; /* 懸停時連結顏色改為藍色 */
+}
+
+.bg-secondary {
+  background-color: #fff !important; /* 將底部背景色改為白色 */
+}
+
+.bg-secondary p {
+  color: #797979; /* 將底部文字顏色改為黑色 */
 }
