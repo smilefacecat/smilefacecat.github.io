@@ -1,0 +1,414 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {box-sizing: border-box;}
+        body, ul, li, h2, p {
+            margin: 0; padding: 0;
+            font-family: "Montserrat", serif;
+    
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+
+img{
+
+    /* width: 100%; */
+    display: block;}
+
+
+    .wrap {
+        display: flex; 
+        justify-content: center; /* 水平置中 */
+        align-items: center; /* 垂直置中 */
+    /* height: 160px; */
+    background-color: #fff0e4; /* 背景顏色 */
+    
+        
+    }
+    header {
+        display: flex;
+        align-items: center; 
+        width: 1037px;
+        height: 100px;
+        margin-top: 30px;  /* 上方空間 */
+    margin-bottom: 30px; /* 下方空間 */
+       
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover; /* 確保圖片比例適配 */
+        cursor: pointer; /* 滑鼠變成點擊手勢 */
+    }
+    
+    
+    header img.btn:hover {
+        content: url('image/Property\ 1=hover.png'); /* 切換成另一張圖片 */
+        transition: all 0.3s ease; /* 增加平滑過渡效果 */
+    }
+    
+    header ul {
+        width: 682px;
+        height: 70px;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        padding: 10px 0;
+        border-radius: 50px;
+        margin: 0px 78px;
+    }
+    header a {
+        size: 18pt;
+        color: rgb(0, 0, 0);
+        display: block;
+        padding: 6px 20px;
+        border-radius: 20px;
+    }
+
+    header a:hover {
+        font-weight: bold;
+        font-size: 15pt; /* 調整文字大小 */
+        color: hsl(211, 56%, 66%);
+    }
+
+
+    .main{
+        display: flex; 
+        justify-content: center; 
+        background-color: hsl(211, 56%, 66%); /* 背景顏色 */
+    }
+    .carousel-container {
+        position: relative;
+        width: 1280px;
+        height: auto;
+        
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 25px 64px;
+        
+    }
+    
+    .carousel {
+        width: 968px;
+        height: 685px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .carousel-inner {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .carousel-btn {
+        position: absolute;
+        top: 50%; /* 垂直置中 */
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .carousel-btn img {
+        width: 20px; /* 圖片大小與按鈕匹配 */
+        height: 40px;
+    }
+    
+    .carousel-btn.prev {
+        left: 65px; /* 自動距離外圍區域 */
+    }
+    
+    .carousel-btn.next {
+        right: 65px; /* 自動距離外圍區域 */
+    }
+   
+    h2 {
+        background-color: #fff0e4;
+        text-align: center;  /* 讓文字水平居中 */
+        letter-spacing: 15px;  /* 設定字間距 */
+        color: hsl(211, 56%, 66%);         /* 設定字體顏色為藍色 */
+        padding-top: 36px;  /* 上方擴展 20px */
+        padding-bottom: 10px; /* 下方擴展 20px */
+   
+      }
+    section {
+        background-color: #fff0e4;
+        padding-bottom: 50px; /* 下方擴展 20px */
+    }
+      
+    .section-1 {
+        
+        width: 1001px;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    
+   
+    .card {
+        width: 220px;
+        padding: 20px;
+        background-color: #ffffff;
+        display: flex;/*這邊設定 flex 是為了用 gap 語法*/
+        flex-direction: column;/*讓小卡內容直排*/
+        gap: 16px;/*設定間格距離*/
+        border-radius: 16px;
+    }
+    .card-title p {
+        font-size: 10pt; /* 設定文字大小為 10pt */
+    }
+    .card-intro {
+        display: flex; /* 使用 Flexbox 進行佈局 */
+        justify-content: space-between; /* 讓內容兩邊對齊 */
+        align-items: center; /* 垂直居中 */
+    }
+    
+   
+    .btn.buy {
+        width: 20px; /* 按鈕寬度 */
+        height: 20px; /* 按鈕高度 */
+        padding: 0; /* 移除內邊距 */
+        border: none; /* 移除邊框 */
+        background: none; /* 移除背景 */
+        cursor: pointer; /* 滑鼠變為點擊手勢 */
+       
+        
+    }
+    
+    
+    /* 按鈕內部圖片大小 */
+    .btn.buy img {
+        width: 100%; /* 圖片寬度適配按鈕 */
+        height: 100%; /* 圖片高度適配按鈕 */
+    }
+    .btn.buy:hover img {
+        content: url('image/Property\ 1=Variant2.png'); /* 切換圖片 */
+    }
+    
+    
+
+    .section-2 {
+        width: 1001px;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+    }
+
+   .center-container {
+  display: flex; /* 使用 Flexbox */
+  justify-content: center; /* 水平置中 */
+  align-items: center; /* 垂直置中 */
+  
+}
+
+.button-container {
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+  }
+  
+  /* 按鈕樣式 */
+  .btn-more {
+    width: 170px; /* 按鈕寬度 */
+    height: 60px; /* 按鈕高度 */
+    font-size: 25px; /* 字體大小 */
+    font-weight: bold; /* 加粗字體 */
+    color: #ffffff; /* 字體顏色 */
+    background-color: hsl(211, 56%, 66%); /* 背景色，藍色調 */
+    border: none; /* 移除按鈕邊框 */
+    border-radius: 10px; /* 圓角設計 */
+    cursor: pointer; /* 滑鼠變成手型 */
+    transition: transform 0.2s, background-color 0.2s; /* 交互效果 */
+  }
+  
+  /* 按鈕效果 */
+  .btn-more:hover {
+    color: hsl(211, 56%, 60%);
+    background-color: hsla(211, 56%, 60%, 0); /* 懸停時改變背景色 */
+    border: 2px solid  hsl(211, 56%, 60%); 
+    
+  }
+  
+  .article1{
+    background-color: hsl(211, 56%, 66%);
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 垂直置中 */
+    align-items: center; /* 水平置中 */
+    height: 612px;
+    
+  }
+
+  .article2 {
+    display: flex; /* 使用 Flexbox */
+    flex-direction: column; /* 讓內部元素垂直排列 */
+    
+    
+    
+    
+    background-color: hsl(211, 56%, 66%) /* 可選：為區域設置背景色，便於對比 */
+  }
+  
+  .article1 h3 {
+    color: hsl(0, 0%, 100%); /* 修改 h3 顏色（藍色調） */
+    font-size: 20pt; /* 設定文字大小為 10pt */
+    letter-spacing: 5px;  /* 設定字間距 */
+
+  }
+
+
+
+
+
+
+
+  .btn-more2 {
+    display: block;
+    width: 170px; /* 按鈕寬度 */
+    height: 45px; /* 按鈕高度 */
+    font-size: 25px; /* 字體大小 */
+    font-weight: bold; /* 加粗字體 */
+    color: #ffffff; /* 字體顏色 */
+    background-color: rgba(244, 198, 180, 1); /* 背景色，藍色調 */
+    border: none; /* 移除按鈕邊框 */
+    border-radius: 10px; /* 圓角設計 */
+    cursor: pointer; /* 滑鼠變成手型 */
+    transition: transform 0.2s, background-color 0.2s; /* 交互效果 */
+  }
+  /* 按鈕效果 */
+  .btn-more2:hover {
+    color: rgba(244, 198, 180, 1);
+    background-color: hsla(211, 56%, 60%, 0); /* 懸停時改變背景色 */
+    border: 2px solid  rgba(244, 198, 180, 1); }
+  
+    video{
+        width: 497px; /* 按鈕寬度 */
+    height: 343px; /* 按鈕高度 */
+margin-left: 130px;
+
+    }
+
+    .footer1 {
+        background-color:  #fff0e4;
+        display: flex; /* 使用 Flexbox 排版 */
+        justify-content: center; /* 垂直置中 */
+
+    }
+
+   
+
+    .footer2 {
+        background-color: #fff0e4;
+        width: 1000.38px; /* 寬度 */
+        height: 250px; /* 高度 */
+        display: flex; /* 使用 Flexbox 排版 */
+        flex-direction: column; /* 垂直排列子元素 */
+        justify-content: center; /* 垂直置中 */
+        
+    
+        
+        
+      }
+
+    .footer-container {
+        /* background-color: blue; */
+        border-top: 2px solid hsl(211, 56%, 66%); /* 僅上邊框有顏色 */
+        
+        display: flex;
+        justify-content: space-between; /* 讓兩個區塊之間保持最大間距 */ 
+      }
+      
+      
+      
+      .footer-section1 {
+        text-align: left; /* 將 .footer-section2 的內容靠左對齊 */
+        margin-top: 15px;
+        
+      }
+      .footer-section2 {
+        
+        text-align: left; /* 將 .footer-section2 的內容靠左對齊 */
+        margin-left: -70px;
+        margin-top: 15px;
+      }
+
+      
+
+    .footer-social {
+        text-align: right; /* 社群連結區靠右對齊 */
+        margin-top: 105px;
+        
+      }
+
+
+      .footer-container h4, 
+.footer-container p, 
+.footer-container ul li a {
+  color: hsl(211, 56%, 66%); /* 設置文字顏色為藍色 */
+}
+      
+      /* 社群按鈕圖標 */
+      .footer-social a {
+        margin: 0 10px; /* 按鈕之間的間距 */
+        display: inline-block; /* 圖標水平排列 */
+        
+      }
+      
+      /* 社群圖標圖片樣式 */
+      .footer-social img {
+        width: 50px; /* 圖標寬度 */
+        height: 50px; /* 圖標高度 */
+        transition: transform 0.3s ease; /* 添加過渡效果 */
+      }
+      
+      .footer-social img:hover {
+        transform: scale(1.1); /* 滑鼠懸停時放大 */
+      }
+
+      a.top {
+        
+        
+        width: 50px; height: 50px;
+        line-height: 50px;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+    }
+    a.top img{
+        width: 60px; height: 60px;
+    }
+    a.top img:hover {
+        transform: scale(1.1); /* 滑鼠懸停時放大 */
+        content: url('image/Property\ 1=hover3.png'); /* 切換圖片 */
+      }
