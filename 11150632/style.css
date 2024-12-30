@@ -119,8 +119,9 @@ img{
     }
     
     .carousel-item img {
+         position: relative;
         width: 100%;
-        height: 100%;
+        max-width: 1000px; /* 限制最大寬度 */
         object-fit: cover;
         border-radius: 5px;
     }
